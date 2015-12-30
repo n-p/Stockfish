@@ -31,28 +31,28 @@ namespace {
   // Polynomial material imbalance parameters
 
   //                      pair  pawn knight bishop rook queen
-  const int Linear[6] = { 1667, -168, -1027, -166,  238, -138 };
+  const int Linear[6] = { 1698, -178, -1038, -178,  261, -131 };
 
   const int QuadraticOurs[][PIECE_TYPE_NB] = {
     //            OUR PIECES
     // pair pawn knight bishop rook queen
-    {   0                               }, // Bishop pair
-    {  40,    2                         }, // Pawn
-    {  32,  255,  -3                    }, // Knight      OUR PIECES
-    {   0,  104,   4,    0              }, // Bishop
-    { -26,   -2,  47,   105,  -149      }, // Rook
-    {-185,   24, 122,   137,  -134,   0 }  // Queen
+    {   -29                               }, // Bishop pair
+    {  40,    22                         }, // Pawn
+    {  68,  281,  20                    }, // Knight      OUR PIECES
+    {   0,  107,   -8,    0              }, // Bishop
+    { -31,   -2,  19,   105,  -149      }, // Rook
+    {-185,   42, 113,   137,  -134,   1 }  // Queen
   };
 
   const int QuadraticTheirs[][PIECE_TYPE_NB] = {
     //           THEIR PIECES
     // pair pawn knight bishop rook queen
     {   0                               }, // Bishop pair
-    {  36,    0                         }, // Pawn
-    {   9,   63,   0                    }, // Knight      OUR PIECES
-    {  59,   65,  42,     0             }, // Bishop
-    {  46,   39,  24,   -24,    0       }, // Rook
-    { 101,  100, -37,   141,  268,    0 }  // Queen
+    {  37,    0                         }, // Pawn
+    {   27,   73,   0                    }, // Knight      OUR PIECES
+    {  61,   65,  42,     0             }, // Bishop
+    {  59,   40,  24,   -10,    0       }, // Rook
+    { 85,  105, -37,   111,  249,    0 }  // Queen
   };
 
   // Endgame evaluation and scaling functions are accessed directly and not through
